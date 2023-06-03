@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <div class="logo">devfinder</div>
+        <div class="switcher" id = "dark">
+          Light
+          <div class="icon">
+            <img src="./assets/icon-sun.svg" alt="" srcset="" />
+          </div>
+        </div>
+      </div>
+      <div class="form-holder">
+        <input
+          type="text"
+          class="usrname"
+          placeholder="Search GitHub username..."
+        />
+        <div class="search-icon"><img src="./assets/icon-search.svg"></div>
+        <div class="btn">Search</div>
+      </div>
+      <div class="user-data-container">
+        <div class="left-con">
+          <div class="profile"><img class = "avatar" src = "https://avatars.githubusercontent.com/u/68127537?v=4"></div>
+        </div>
+        <div class="right-con">
+          <div class="top-data">
+            <div class="name">The Octacat</div>
+            <div class="date">Joined at 25 Jan 2021</div>
+          </div>
+          <div class="username">@octacat</div>
+          <div class="bio">This Profile has no bio</div>
+          <div class="user-info">
+            <div class="info-holder">
+              <div class="info-title">
+                Repos
+              </div>
+              <div class="count" id = "repocount">8</div>
+            </div>
+            <div class="info-holder">
+              <div class="info-title">
+                Followers
+              </div>
+              <div class="count" id = "flwcount">3938</div>
+            </div>
+            <div class="info-holder">
+              <div class="info-title">
+                Following
+              </div>
+              <div class="count" id = "flwgcount">9</div>
+            </div>
+          </div>
+          <div class="social-container">
+            <div class="left-side">
+              <div class="social-holder">
+                <div class="icon-social"><img src="./assets/icon-location.svg"></div>
+                <div class="detail" id = "address">San Francisco</div>
+              </div>
+               <div class="social-holder">
+                <div class="icon-social"><img src="./assets/icon-website.svg"></div>
+                <div class="detail" id = "website">https://github.blog</div>
+              </div>
+            </div>
+            <div class="right-side">
+               <div class="social-holder">
+                <div class="icon-social"><img src="./assets/icon-twitter.svg"></div>
+                <div class="detail" id = "twitter">Not available</div>
+              </div>
+               <div class="social-holder">
+                <div class="icon-social"><img src="./assets/icon-company.svg"></div>
+                <div class="detail" id = "company">agithub</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
